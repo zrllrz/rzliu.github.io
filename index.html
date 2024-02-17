@@ -1,83 +1,101 @@
 <html>
-
     <head>
+        <title>About Ruizhe Liu</title>
         <meta charset="UTF-8">
-        <meta name="rzliu" content="witdh=device-width, initial-scale=1.0">
-        <title>Ruizhe Liu</title>
+        <meta name="viewport" content="witdh=device-width, initial-scale=1.0">
         <style>
-            .container {
-                width: 80%; /* Set initial width of container */
-                margin: 0 auto; /* Center the container */
+            body {
+                font-family: "Arial";
             }
-        
-            /* Style the table */
             table {
-                width: 100%; /* Table will take full width of its container */
-                border-collapse: collapse;
+                width: 100%;
+                table-layout: fixed;
             }
-        
-            /* Style table cells */
+
             th, td {
-                border: 1px solid rgb(172, 41, 41);
-                padding: 8px;
-                text-align: center;
+                border: 5px solid rgb(255, 255, 255);
+                background-color: rgb(240,240,240);
+                /* padding: 10px; */
+                text-align: left;
+                vertical-align: top;
+            }
+
+            th:first-child, td:first-child {
+                width: 200px;
+            }
+
+            th:nth-child(2), td:nth-child(2) {
+                width: auto;
+            }
+
+            .subtable {
+                width: 50px;
             }
         </style>
     </head>
 
     <body>
-    <div class="container">
         <table>
             <tr>
-                <th>1.1</th>
-                <th>1.2</th>
-                <th>1.3</th>
+                <th>
+                    <img src="imgs/head.jpg" width="200" height="200" align="center" />
+                </th>
+                <th rowspan="2">
+                        <font size=6px>About</font>
+                        <p>
+                            <font size=4px>
+                                From: China &#x1F1E8;&#x1F1F3;
+                                <br/>
+                                Academic interest:
+                                Artificial Intelligence &#x1F9E0; 
+                                Embodied AI &#x1F916;
+                                Computer Vision &#x1F441;&#xFE0F;
+                                Computer Science &#x1F5A5;
+                                <br/>
+                                Other interest: Music &#x1F3B5;, Especially singing &#x1F3A4;. <br/>
+                            </font>
+                        </p>
+                    <font size=6px>Experience</font>
+                    <p>
+                        <font size=4px>
+                            &#x1F393; undergraduate @ <a href="https://www.pku.edu.cn//" target="_blank">Peking University</a> (9/2020-)
+                            <br/>
+                            &#x1F52C; research assistant @ <a href="https://datascience.hku.hk">HKU IDS</a> (3/2023-)
+                        </font>
+                    </p>
+                </th>
             </tr>
             <tr>
-                <td>2.1</td>
-                <td>2.2</td>
-                <td>2.3</td>
+                <th>
+                    <font size=6px>Ruizhe Liu</font><br/>
+                    <font size=4px>
+                    &#x1F4E7; lrz360@stu.pku.edu.cn<br/>
+                    &#x1F4DE; (+86) 159 2736 8711
+                    </font>
+                </th>
             </tr>
             <tr>
-                <td>3.1</td>
-                <td>3.2</td>
-                <td>3.3</td>
+                <th rowspan="3">
+                    <font size=6px>Projects</font><br/>
+                </th>
+                <td>
+                    <font size=6px> <b>InfoCon: Concept Discovery with Generative and Discriminative Informativeness</b></font><br/>
+                    <font size=4px>&#x270D;&#xFE0F; <b>Ruizhe Liu</b>, Qian Luo, Yanchao Yang<br/>
+                    &#x1F4F0; Accepted by <b>ICLR 2024</b><br/>
+                    &#x1F9D1;&#x200D;&#x1F3EB; <a href="" target="_blank">[codes]</a><a href="https://openreview.net/pdf?id=g6eCbercEc" target="_blank">[paper]</a>
+                    </font>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <font size=6px> <b>Concentration in CTM: Definition, Metric and Effect</b></font><br/>
+                    <font size=4px>&#x270D;&#xFE0F; Chuanruo Ning, <b>Ruizhe Liu</b><br/>
+                    &#x270D;&#xFE0F; Cognitive/Computer Science of the <b>Conscious Turing Machine (CTM)</b> <a href="https://csd.cmu.edu/news/a-theory-of-consciousness-from-a-theoretical-computer-science-perspective-insights-from-the-conscious-turing-machine-ctm" target="_blank">[about CTM]</a><br/>
+                    &#x1F517; <a href="https://piazza.com/redirect/s3?bucket=uploads&prefix=paste%2Fle8jb7vgch840z%2F973c63daae37ca2416539d71ae5f58aeade678144d3a75cf7753a570900ac7b9%2FConcentration_in_CTM-final.pdf" target="_blank">[paper]</a>
+                </font>
+                </td>
             </tr>
         </table>
-
-        <table>
-            <tr>
-                <td colspan="2">1.1</td>
-                <td>1.3</td>
-                <td>1.4</td>
-                <td>1.5</td>
-            </tr>
-            <tr>
-                <td rowspan="2">2.1</td>
-                <td>2.2</td>
-                <td>2.3</td>
-                <td>2.4</td>
-                <td>2.5</td>
-            </tr>
-            <tr>
-                <td>3.1</td>
-                <td>3.2</td>
-                <td>3.3</td>
-                <td>3.4</td>
-            </tr>
-            <tr>
-                <td>4.1</td>
-                <td>4.2</td>
-                <td>4.3</td>
-                <td colspan="2" rowspan="2">4.4</td>
-            </tr>
-            <tr>
-                <td>5.1</td>
-                <td>5.2</td>
-                <td>5.3</td>
-            </tr>
-        </table>
-    </div>
 
         <!--
 
