@@ -1,22 +1,75 @@
+<!DOCTYPE html>
 <html>
+<head>
+    <style>
+        /* Apply CSS rules to make the table look better */
+        table {
+            width: 100%; /* Set the table width to 100% of its container */
+            border-collapse: collapse; /* Collapse borders between table cells */
+        }
+        th, td {
+            border: 1px solid black; /* Add a solid border to each cell */
+            text-align: left; /* Align text to the left */
+            padding: 8px; /* Add some padding for content inside cells */
+        }
+        /* Fix the width of the first and third columns */
+        .first-column {
+            width: 200px;
+        }
+        .third-column {
+            width: 400px;
+        }
+    </style>
+</head>
+<body>
 
-    <head>
-        <title>Ruizhe Liu</title>
-    </head>
+<table>
+    <tr>
+        <th class="first-column">First Column</th>
+        <th class="third-column" rowspan="2" colspan="2"><font size=6px>About</font>
+            <p>
+                <font size=4px>
+                    From: China &#x1F1E8;&#x1F1F3;
+                    <br/>
+                    Academic interest:
+                    Artificial Intelligence &#x1F9E0; 
+                    Embodied AI &#x1F916;
+                    Computer Vision &#x1F441;&#xFE0F;
+                    Computer Science &#x1F5A5;
+                    <br/>
+                    Other interest: Music &#x1F3B5;, Especially singing &#x1F3A4;. <br/>
+                </font>
+            </p>
+        <font size=6px>Experience</font>
+        <p>
+            <font size=4px>
+                &#x1F393; undergraduate @ <a href="https://www.pku.edu.cn//" target="_blank">Peking University</a> (9/2020-)
+                <br/>
+                &#x1F52C; research assistant @ <a href="https://datascience.hku.hk">HKU IDS</a> (3/2023-)
+            </font>
+        </p></th>
+    </tr>
+    <tr>
+        <th class="first-column"><font size=6px>Ruizhe Liu</font><br/>
+            <font size=3px>
+            &#x1F4E7; lrz360@stu.pku.edu.cn<br/>
+            &#x1F4DE; (+86) 159 2736 8711
+            </font></th>
+    </tr>
+    <tr>
+        <td class="first-column" colspan="2"><font size=6px>Projects</font><br/></td>
+        <td class="third-column">Row 1, Cell 3</td>
+    </tr>
+    <tr>
+        <td class="first-column" colspan="2"><font size=4px> InfoCon: Concept Discovery with Generative and Discriminative Informativeness</font><br/>
+            <font size=2px>&#x270D;&#xFE0F; <b>Ruizhe Liu</b>, Qian Luo, Yanchao Yang<br/>
+            &#x1F4F0; Accepted by <b>ICLR 2024</b><br/>
+            &#x1F517; <a href="" target="_blank">[codes]</a><a href="https://openreview.net/pdf?id=g6eCbercEc" target="_blank">[paper]</a>
+            </font></td>
+        <td>Row 2, Cell 3</td>
+    </tr>
+    <!-- Add more rows as needed -->
+</table>
 
-    <body>
-
-        <font color="blue" size="1"><h1 align="left">Ruizhe Liu</h1></font>
-        <font color="green" size="1"><h2 align="left">Ruizhe Liu</h2></font>
-        <font color="orange" size="1"><h3 align="left">Ruizhe Liu</h3></font>
-        <font color="blue" size="1"><h4 align="left">Ruizhe Liu</h4></font>
-        <font color="green" size="1"><h5 align="left">Ruizhe Liu</h5></font>
-        <font color="orange" size="1"><h6 align="left">Ruizhe Liu</h6></font>
-        <font color="blue" size="1"><h7 align="left">Ruizhe Liu</h7></font>
-
-        <font color="red" size="1">
-            Ruizhe Liu's personal website.
-        </font>
-
-    </body>
+</body>
 </html>

@@ -9,27 +9,22 @@
             }
             table {
                 width: 100%;
-                table-layout: fixed;
+                border-collapse: collapse;
             }
 
             th, td {
                 border: 5px solid rgb(255, 255, 255);
                 background-color: rgb(240,240,240);
+                padding: 8px;
                 /* padding: 10px; */
                 text-align: left;
                 vertical-align: top;
             }
-
-            th:first-child, td:first-child {
+            .first-column {
                 width: 200px;
             }
-
-            th:nth-child(2), td:nth-child(2) {
-                width: auto;
-            }
-
-            .subtable {
-                width: 50px;
+            .third-column {
+                width: 400px;
             }
         </style>
     </head>
@@ -37,11 +32,11 @@
     <body>
         <table>
             <tr>
-                <th>
+                <th class="first-column">
                     <img src="imgs/head2.png" width="200" height="200" align="center" />
                 </th>
-                <th rowspan="2">
-                        <font size=6px>About</font>
+                <td class="third-column" rowspan="2" colspan="2">
+                    <font size=6px>About</font>
                         <p>
                             <font size=4px>
                                 From: China &#x1F1E8;&#x1F1F3;
@@ -63,10 +58,10 @@
                             &#x1F52C; research assistant @ <a href="https://datascience.hku.hk">HKU IDS</a> (3/2023-)
                         </font>
                     </p>
-                </th>
+                </td>
             </tr>
             <tr>
-                <th>
+                <th class="first-column">
                     <font size=6px>Ruizhe Liu</font><br/>
                     <font size=3px>
                     &#x1F4E7; lrz360@stu.pku.edu.cn<br/>
@@ -75,113 +70,35 @@
                 </th>
             </tr>
             <tr>
-                <th rowspan="3">
+                <th class="first-column" colspan="3">
                     <font size=6px>Projects</font><br/>
                 </th>
-                <td>
-                    <font size=6px> <b>InfoCon: Concept Discovery with Generative and Discriminative Informativeness</b></font><br/>
-                    <font size=4px>&#x270D;&#xFE0F; <b>Ruizhe Liu</b>, Qian Luo, Yanchao Yang<br/>
+                <!-- <td class="third-column"></td> -->
+            </tr>
+            <tr>
+                <td class="first-column" colspan="2">
+                    <font size=4px> InfoCon: Concept Discovery with Generative and Discriminative Informativeness</font><br/>
+                    <font size=2px>&#x270D;&#xFE0F; <b>Ruizhe Liu</b>, Qian Luo, Yanchao Yang<br/>
                     &#x1F4F0; Accepted by <b>ICLR 2024</b><br/>
-                    &#x1F517; <a href="" target="_blank">[codes]</a><a href="https://openreview.net/pdf?id=g6eCbercEc" target="_blank">[paper]</a>
+                    &#x1F517; <a href="infocon/infocon.html" target="_blank">[intro.]</a><a href="" target="_blank">[codes]</a><a href="https://openreview.net/pdf?id=g6eCbercEc" target="_blank">[paper]</a>
                     </font>
                 </td>
+                <td class="third-column">
+                    <img src="infocon/imgs/gg_and_dg.jpg" width="400"/>
+                </td>
             </tr>
             <tr>
-                <td>
-                    <font size=6px> <b>Concentration in CTM: Definition, Metric and Effect</b></font><br/>
-                    <font size=4px>&#x270D;&#xFE0F; Chuanruo Ning, <b>Ruizhe Liu</b><br/>
+                <td class="first-column" colspan="2">
+                    <font size=4px> Concentration in CTM: Definition, Metric and Effect</font><br/>
+                    <font size=2px>&#x270D;&#xFE0F; Chuanruo Ning, <b>Ruizhe Liu</b><br/>
                     &#x1F9D1;&#x200D;&#x1F3EB; Cognitive/Computer Science of the <b>Conscious Turing Machine (CTM)</b> <a href="https://csd.cmu.edu/news/a-theory-of-consciousness-from-a-theoretical-computer-science-perspective-insights-from-the-conscious-turing-machine-ctm" target="_blank">[about CTM]</a><br/>
                     &#x1F517; <a href="https://piazza.com/redirect/s3?bucket=uploads&prefix=paste%2Fle8jb7vgch840z%2F973c63daae37ca2416539d71ae5f58aeade678144d3a75cf7753a570900ac7b9%2FConcentration_in_CTM-final.pdf" target="_blank">[paper]</a>
-                </font>
+                    </font>
+                </td>
+                <td>
                 </td>
             </tr>
         </table>
-
-        <!--
-
-        <font color="blue" size="1"><h1 align="left">Ruizhe Liu</h1></font>
-        <font color="green" size="1"><h2 align="left">Ruizhe Liu</h2></font>
-        <font color="orange" size="1"><h3 align="left">Ruizhe Liu</h3></font>
-        <font color="blue" size="1"><h4 align="left">Ruizhe Liu</h4></font>
-        <font color="green" size="1"><h5 align="left">Ruizhe Liu</h5></font>
-        <font color="orange" size="1"><h6 align="left">Ruizhe Liu</h6></font>
-        <font color="blue" size="1"><h7 align="left">Ruizhe Liu</h7></font>
-
-        <font color="red" size="1">
-            Ruizhe Liu's personal website.
-        </font>
-
-        <ul type="*">
-            <li>list 1</li>
-            <li>list 2</li>
-            <li>list 3</li>
-            <li>list 4</li>
-        </ul>
-
-        <br/>
-
-        <img src="imgs/Unknown.jpeg" width="200" height="200" border="10" color="green"/>
-
-        <br/>
-
-        <table border="1" width="300" height="300" align="center" cellspacing="0">
-            <tr>
-                <th>1.1</th>
-                <th>1.2</th>
-                <th>1.3</th>
-            </tr>
-            <tr>
-                <td>2.1</td>
-                <td>2.2</td>
-                <td>2.3</td>
-            </tr>
-            <tr>
-                <td>3.1</td>
-                <td>3.2</td>
-                <td>3.3</td>
-            </tr>
-        </table>
-
-        <table border="1" width="500" height="500" align="center" cellspacing="0">
-            <tr>
-                <td colspan="2">1.1</td>
-                <td>1.3</td>
-                <td>1.4</td>
-                <td>1.5</td>
-            </tr>
-            <tr>
-                <td rowspan="2">2.1</td>
-                <td>2.2</td>
-                <td>2.3</td>
-                <td>2.4</td>
-                <td>2.5</td>
-            </tr>
-            <tr>
-                <td>3.1</td>
-                <td>3.2</td>
-                <td>3.3</td>
-                <td>3.4</td>
-            </tr>
-            <tr>
-                <td>4.1</td>
-                <td>4.2</td>
-                <td>4.3</td>
-                <td colspan="2" rowspan="2">4.4</td>
-            </tr>
-            <tr>
-                <td>5.1</td>
-                <td>5.2</td>
-                <td>5.3</td>
-            </tr>
-
-        </table>
-
-        <br/>
-
-        <iframe src="iframes/test.html" width="500" height="400" name="frame">
-        </iframe>
-        
-        -->
 
     </body>
 </html>
